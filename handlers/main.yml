@@ -1,0 +1,13 @@
+- name: Reload java
+  service:
+    name: "{{ item }}"
+    state: reloaded
+  listen: java:reload
+  loop: "{{ java_enabled | ternary(java_services, []) }}"
+
+- name: Restart java
+  service:
+    name: "{{ item }}"
+    state: restarted
+  listen: java:restart
+  loop: "{{ java_enabled | ternary(java_services, []) }}"

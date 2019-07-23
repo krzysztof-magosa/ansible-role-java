@@ -1,0 +1,3 @@
+java__latest_version: "{{ java__packages.keys() | sort(reverse=true) | first }}"
+java__versions: "{{ java_versions | map('replace', 'latest', java__latest_version) | map('int') | list }}"
+java__versions_available: "{{ java__packages.keys() | list }}"

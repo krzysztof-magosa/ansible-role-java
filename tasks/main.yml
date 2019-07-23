@@ -1,0 +1,10 @@
+- import_tasks: variables.yml
+  tags:
+    - java
+    - java_variables
+    - java_install
+
+- import_tasks: install.yml
+  tags:
+    - java
+    - java_install

@@ -1,0 +1,3 @@
+# Debian Stretch
+java__packages:
+  8: openjdk-8-jre-headless

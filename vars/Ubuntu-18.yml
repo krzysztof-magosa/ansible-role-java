@@ -1,0 +1,4 @@
+# Ubuntu Bionic
+java__packages:
+  8: openjdk-8-jre-headless
+  11: openjdk-11-jre-headless

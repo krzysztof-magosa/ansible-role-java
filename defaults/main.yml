@@ -1,0 +1,4 @@
+# Java versions to install (see table in README)
+# 'latest' point to highest number available.
+java_versions:
+  - latest

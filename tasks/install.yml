@@ -1,0 +1,18 @@
+- name: Display information
+  debug:
+    msg:
+      - "Versions available: {{ java__versions_available | join(', ') }}"
+      - "Latest version: {{ java__latest_version }}"
+      - "Versions to install: {{ java__versions | join(', ') }}"
+
+- name: Validate version
+  fail:
+    msg: "Unsupported version requested: {{ item }}."
+  loop: "{{ java__versions }}"
+  when: item not in java__versions_available
+
+- name: Install Java
+  package:
+    name: "{{ java__packages[item] }}"
+    state: present
+  loop: "{{ java__versions }}"
