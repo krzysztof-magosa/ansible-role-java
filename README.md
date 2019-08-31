@@ -14,13 +14,13 @@ Ansible role installing Java
 * Ubuntu (tested on Disco Dingo, Bionic)
 
 # Versions available
-|System               | 6| 7| 8|11|12|13|
-|---------------------|--|--|--|--|--|--|
-|CentOS 7             |☑ |☑ |☑ |☑ |  |  |
-|Debian Buster        |  |  |  |☑ |  |  |
-|Debian Stretch       |  |  |☑ |  |  |  |
-|Ubuntu Disco Dingo   |  |  |☑ |☑ |☑ |☑ |
-|Ubuntu Bionic        |  |  |☑ |☑ |  |  |
+|System                  | 6| 7| 8|11|12|13|
+|------------------------|--|--|--|--|--|--|
+|CentOS 7                |☑ |☑ |☑ |☑ |  |  |
+|Debian 10 Buster        |  |  |  |☑ |  |  |
+|Debian 9 Stretch        |  |  |☑ |  |  |  |
+|Ubuntu 19 Disco Dingo   |  |  |☑ |☑ |☑ |☑ |
+|Ubuntu 18 Bionic        |  |  |☑ |☑ |  |  |
 
 ## Variables
 See [defaults](defaults/main.yml).
